@@ -38,3 +38,27 @@ graph TD
 - Support for Claude models via Anthropic API.
 - Support for reviewing other languages (JS, TS, Java) using Tree-sitter.
 - Add GitHub PR commenting integration.
+- ## Architecture Diagram
+
+```text
+GitHub Repository URL
+        ↓
+Repository Cloning (GitPython)
+        ↓
+AST Parsing (Python ast)
+        ↓
+Code Chunk Extraction
+        ↓
+GPT-4o-mini Review Engine
+        ↓
+Confidence Score + Severity Rating
+        ↓
+Streamlit Dashboard Output
+```
+
+## Future Improvements
+
+- Add support for Claude and Gemini models
+- Add support for JavaScript, TypeScript and Java
+- Add GitHub Pull Request inline comments
+- Add review history and analytics dashboard
